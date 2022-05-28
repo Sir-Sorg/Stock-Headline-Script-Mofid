@@ -1,6 +1,6 @@
 //------------------------------ Sina Orj Sar-Khat Bot ---------------------------
 const milliseconds = 300
-//↴ Hamishe bayad bishtar az 200 bashad !
+
 const orderInterval = setInterval(harvestSymbol, milliseconds);
 
 function harvestSymbol() {
@@ -14,7 +14,7 @@ function harvestSymbol() {
   // });
 
   $("body").on('DOMSubtreeModified', "button.col-7.btn.btn-sm.btn-success.flex-grow-1.px-0", function () {
-    console.log('Buy Started +')
+    console.log('Purchase process is starting +')
     buyThis()
   });
 }
@@ -35,10 +35,22 @@ function buyThis() {
   let buyButton = document.querySelector("button.col-7.btn.btn-sm.btn-success.flex-grow-1.px-0");
   buyButton.click()
   console.log("Purchase request sent ✔");
-
-  return;
 }
 
 function by() {
   clearInterval(orderInterval)
+  const shape = `
+            88                                             88              
+            88                                             ""              
+            88                                                             
+8b,dPPYba,  88,dPPYba,   ,adPPYba,   ,adPPYba, 8b,dPPYba,  88 8b,     ,d8  
+88P'    "8a 88P'    "8a a8"     "8a a8P_____88 88P'   \`"8a 88  \`Y8, ,8P'   
+88       d8 88       88 8b       d8 8PP""""""" 88       88 88    )888(     
+88b,   ,a8" 88       88 "8a,   ,a8" "8b,   ,aa 88       88 88  ,d8" "8b,   
+88\`YbbdP"'  88       88  \`"YbbdP"'   \`"Ybbd8"' 88       88 88 8P'     \`Y8  
+88                                                                         
+88     
+By 𝙎𝙞𝙣𝙖 𝙊𝙧𝙟 - Version 𝑽1.1
+`
+  console.log(shape)
 }
