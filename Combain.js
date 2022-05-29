@@ -1,20 +1,15 @@
 //------------------------------ Sina Orj Sar-Khat Bot ---------------------------
-const milliseconds = 300
+const milliseconds = 350
 
 const orderInterval = setInterval(harvestSymbol, milliseconds);
 
 function harvestSymbol() {
   let goToPurchase = document.querySelector("button.btn.btn-sm.btn-outline-success.btn-block.ml-1")
   goToPurchase.click();
-  console.log('Buy button clicked -')
-
-  // $.when($("div.h6.mb-0.d-flex").text()).then(function () {
-  //   console.log('Buy Started +')
-  //   buyThis()
-  // });
+  console.log('Purchase button clicked ➼')
 
   $("body").on('DOMSubtreeModified', "button.col-7.btn.btn-sm.btn-success.flex-grow-1.px-0", function () {
-    console.log('Purchase process is starting +')
+    console.log('Purchase process is starting ☸')
     buyThis()
   });
 }
@@ -51,6 +46,7 @@ function by() {
 88                                                                         
 88     
 By 𝙎𝙞𝙣𝙖 𝙊𝙧𝙟 - Version 𝑽1.1
+------- Github: 𝙎𝙞𝙧-𝙎𝙤𝙧𝙜  LinkedIn: 𝙎𝙞𝙣𝙖 𝙊𝙧𝙤𝙟𝙡𝙤
 `
   console.log(shape)
 }
