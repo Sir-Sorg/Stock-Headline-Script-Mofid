@@ -32,7 +32,7 @@ function buyThis() {
   console.log("Purchase request sent ✔");
 }
 
-function by() {
+function end() {
   clearInterval(orderInterval)
   const shape = `
             88                                             88              
